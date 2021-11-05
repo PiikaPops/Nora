@@ -1,5 +1,5 @@
+require('dotenv').config({path: __dirname + '/.env'})
 const Discord = require('discord.js')
-const config = require('./config.json');
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES']});
 
 client.on('ready', () => {
@@ -7,4 +7,4 @@ client.on('ready', () => {
 	client.user.setActivity("Le meilleur bot");
 })
 
-client.login(config.token);
+client.login(process.env.TOKEN);
