@@ -56,7 +56,7 @@ module.exports = client => {
             .setColor("#9697F1")
             .setThumbnail(guild.iconURL()) 
             .setImage('attachment://welcome.png')
-            .setDescription(`\n\n● ━━━━━━━・⋅ʚ♡ɞ⋅・━━━━━━━ ●\n- Prend soins de consulter le salon <#906199372847546398> avant de continuer\n\n- N'oublie pas de choisir tes rôles dans <#906199422139003010>`)
+            .setDescription(`\n\n● ━━━━━━━・⋅ʚ♡ɞ⋅・━━━━━━━ ●\nN'oublie pas de choisir tes rôles dans <#906199422139003010>`)
         client.channels.cache.get('906247057549967381').send({ embeds: [wEmbed],files: [attachment] });
 
         let role = member.guild.roles.cache.find(r => r.name === "Stilhedien");
